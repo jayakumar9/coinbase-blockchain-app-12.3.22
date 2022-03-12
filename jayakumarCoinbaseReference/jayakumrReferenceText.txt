@@ -1,0 +1,91 @@
+https://youtu.be/frCsGK4cKks
+Build Coinbase Blockchain Web 3.0 App with Next.js | Sanity.io | thirdweb
+In this tutorial, you're gonna be building the Coinbase Blockchain Web 3.0 App using Next JS, Sanity.io, thirdweb, Styled Components, and Vercel 🔥
+
+Get early access to thirdweb 👉  https://thirdweb.com/start?utm_source...
+
+Get the free boosted plan with Sanity 👉  https://www.sanity.io/cleverprogrammer
+
+🗄️ Link to the assets: https://drive.google.com/drive/folder...
+
+🔗 GitHub Repo: https://github.com/drakosi99/coinbase...
+
+You'll be learning about:
+
+👉  Building a Web 3.0 Application with Next JS
+👉  Styling your app using Styled Components
+👉  Create and mint your own Cryptocurrency Tokens using the thirdweb SDK
+👉  Adding Web 3.0 authentication using Metamask
+👉  Storing data and information about the tokens you created in Sanity.io 
+👉  Using GROQ to retrieve data from Sanity Studio and display it in your Web 3.0 App
+👉  Creating a send and receive functionality for your tokens on the blockchain
+👉  Deploy and host the app on Vercel 
+
+Buckle up, buttercup 🚀
+======================================================================================
+COMMANDS
+================
+Video completed time: 0:29:17
+
+Video code updated time 1:36:23 (dependencies need to be install)
+BLOCKCHAIN_DELL_DESKTOP> npx create-next-app@latest coinbase-blockchain-app 
+npm run dev ->Starts the development server.
+npm run build ->Builds the app for production.
+
+  npm start
+    Runs the built app in production mode.
+
+We suggest that you begin by typing:
+
+  cd own coinbase-blockchain-app
+  npm run dev
+
+
+coinbase-blockchain-app>yarn dev (video time 0:05:30)
+
+coinbase-blockchain-app> npm install -g @sanity/cli 
+coinbase-blockchain-app\studio>sanity init --coupon cleverprogrammer
+
+    ? Project name: Own Coinbase-blockchain-app-11.3.22
+    Your content will be stored in a dataset that can be public or private, depending on
+    whether you want to query your content with or without authentication.
+    The default dataset configuration has a public dataset named "production".
+    ? Use the default dataset configuration? Yes
+    √ Creating dataset
+    ? Project output path: F:\BLOCKCHAIN_DELL_DESKTOP\coinbase-blockchain-app\studio
+    ? Select project template Clean project with no predefined schemas
+    ▪ sanity docs to open the documentation in a browser
+    ▪ sanity manage to open the project settings in a browser
+    ▪ sanity help to explore the CLI manual
+    ▪ sanity start to run your studio
+coinbase-blockchain-app /studio>sanity start
+coinbase-blockchain-app > yarn add @sanity/client           Refer video time 0:15:10
+coinbase-blockchain-app >yarn add @sanity/image-url         Refer video time 0:15:17 
+
+coinbase-blockchain-app >yarn add @s3rdweb/react @3rdweb/hooks @3rdweb/sdk  Refer video time 0:30:12
+coinbase-blockchain-app >yarn add styled-components         Refer video time 0:32:26
+    // add static,assets folder as per video time 0:49:30
+        then install below dependencies as per video time 0:49:37 
+coinbase-blockchain-app >yarn add react-icons          Refer video time 0:49:37
+coinbase-blockchain-app >yarn add react-chartjs-2         Refer video time 1:32:04
+    //sanity link to be pasted as per video time from 1:46:12  to 1:45:10 at portfolio.js line no.28
+coinbase-blockchain-app >yarn add ethers         Refer video time 1:49:41
+    //metamask link to be pasted as per video time  video time 1:51:39 at portfolio.js line no.15
+
+    
+
+
+
+coinbase-blockchain-app >yarn add react-chartjs-2 (video time: 1:32:06)
+==================================================================================
+https://thirdweb.com/  Rinkeby Testnet coin details as follows   Refer video time 0:29:14
+
+BTC:    0x13CC4F837Fc37E062F2E7A84DB9E6Fdf6fd7d69A
+ETH:    0x11B39Ae09D23f65ad2d763191b1c6bA38c256d33
+SOL:    0xDCC61bC8334DeF53ac5bd0D38a6C363DA9c2fBB1
+
+Edge website metamask private key of a/c name Coinbase sender: 1af01860b22afc1247b1650f8e88b420a0603966b03143536dd649a3be81ad0d   Refer video time 0:29:00
+
+
+https://gwkherug.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%3D%3D'coins'%5D%7B%0A%20%20name%2C%0A%20%20usdPrice%2C%0A%20%20contractAddress%2C%0A%20%20symbol%2C%0A%20%20logo%0A%0A%7D
+https://l9kgdpj2.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%3D%3D'coins'%5D%7B%0A%20%20name%2C%0A%20%20usdPrice%2C%0A%20%20contractAddress%2C%0A%20%20symbol%2C%0A%20%20logo%0A%0A%7D

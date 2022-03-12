@@ -1,0 +1,114 @@
+const Wrapper = styled.div'
+  display: flex;
+  height: 100vh;
+  max-width: 100vw;
+  background-color: #0a0b0d;
+  color: white;
+  display: grid;
+  place-items: center;
+'
+
+const WalletConnect = styled.div'
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+//check video time: 0:36:25
+    &: hover {
+        cursor: pointer;
+    }
+'
+
+const Details = styled.div'
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 500;
+    color: #282b2f;
+'
+
+=============================================================================
+
+import React from "react"; const Dashboard = ({address}) => { 
+    return <div> {address}</div>
+}
+
+export default Dashboard
+============================================
+Header.js code
+=============
+
+const Wrapper = styled.div'
+    width: calc(100% - 3rem);
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #282b2f;
+    display: flex;
+    align-items: center;
+'
+
+const Title = styled.div'
+    font-size: 2rem;
+    font-weight: 600;
+    flex: 1;
+'
+
+const ButtonContainer = styled.div'
+    display: flex;
+'
+
+const Button = styled.div'
+    border: 1px solid #282b2f;
+    padding: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-radius: 0.4rem;
+    margin-right: 1rem;
+
+    //check video time: 0:42:25
+    &: hover {
+        cursor: pointer;
+    }
+'
+
+=====================================================
+Portfolio.js code
+==============
+import React from "react";
+import styled from 'styled-components'
+import {BsThreeDotsVertical} from 'react-icons/bs'
+import { coins} from '../static/coins'
+
+const Portfolio = () => {
+    return ( 
+        < Wrapper >
+            < PortfolioTable >
+              < TableItem >
+                   < Title > Your Assets < /Tiltle> 
+                </ TableItem >
+                    < Divider />
+                    < Table >
+                         < TableItem >
+                             < TableRow >
+                                < div style={{ flex: 3 }}> Name < /div>
+                                < div style={{ flex: 2 }}> Balance < /div>
+                                < div style={{ flex: 1 }}> Price < /div>
+                                < div style={{ flex: 1 }}> Allocation < /div>
+                                < div style={{ flex: 0 }}> <BsThreeDotsVertical/> < /div>
+                             < TableRow >
+                        </ TableItem>                          
+                        <Divider />
+                        <div>{coins.map(coin => (
+                            <div>
+                                <Coin coin={coin} />
+                                <h2>{coin.name}</h2>
+                                <Divider />
+                            </div>
+                        ))}</div>
+                        ))}</div>
+                     </ Table >
+            </ PortfolioTable>
+        </ Wrapper>S
+    )
+}
+===========================================================
