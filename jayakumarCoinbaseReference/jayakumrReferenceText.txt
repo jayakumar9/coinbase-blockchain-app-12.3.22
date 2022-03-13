@@ -26,23 +26,16 @@ Buckle up, buttercup 🚀
 COMMANDS
 ================
 Video completed time: 0:29:17
+Video code updated time 3:52:03 (dependencies need to be install)
 
-Video code updated time 1:36:23 (dependencies need to be install)
 BLOCKCHAIN_DELL_DESKTOP> npx create-next-app@latest coinbase-blockchain-app 
-npm run dev ->Starts the development server.
-npm run build ->Builds the app for production.
-
-  npm start
-    Runs the built app in production mode.
-
-We suggest that you begin by typing:
-
-  cd own coinbase-blockchain-app
-  npm run dev
-
-
-coinbase-blockchain-app>yarn dev (video time 0:05:30)
-
+    npm run dev ->Starts the development server.
+    npm run build ->Builds the app for production.
+    npm start ->Runs the built app in production mode.
+    We suggest that you begin by typing:
+      cd own coinbase-blockchain-app
+      npm run dev
+coinbase-blockchain-app> yarn dev (video time 0:05:30)
 coinbase-blockchain-app> npm install -g @sanity/cli 
 coinbase-blockchain-app\studio>sanity init --coupon cleverprogrammer
 
@@ -71,6 +64,10 @@ coinbase-blockchain-app >yarn add react-chartjs-2         Refer video time 1:32:
     //sanity link to be pasted as per video time from 1:46:12  to 1:45:10 at portfolio.js line no.28
 coinbase-blockchain-app >yarn add ethers         Refer video time 1:49:41
     //metamask link to be pasted as per video time  video time 1:51:39 at portfolio.js line no.15
+coinbase-blockchain-app >yarn add react-modal   Refer video time 2:19:56 
+coinbase-blockchain-app >yarn add @sanity/image-url   Refer video time 3:01:20 
+    // Receive coinitem code start from video time 3:52:03
+coinbase-blockchain-app >yarn add react-loader-spinner   Refer video time 3:46:07 
 
     
 
@@ -87,5 +84,5 @@ SOL:    0xDCC61bC8334DeF53ac5bd0D38a6C363DA9c2fBB1
 Edge website metamask private key of a/c name Coinbase sender: 1af01860b22afc1247b1650f8e88b420a0603966b03143536dd649a3be81ad0d   Refer video time 0:29:00
 
 
-https://gwkherug.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%3D%3D'coins'%5D%7B%0A%20%20name%2C%0A%20%20usdPrice%2C%0A%20%20contractAddress%2C%0A%20%20symbol%2C%0A%20%20logo%0A%0A%7D
+
 https://l9kgdpj2.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%3D%3D'coins'%5D%7B%0A%20%20name%2C%0A%20%20usdPrice%2C%0A%20%20contractAddress%2C%0A%20%20symbol%2C%0A%20%20logo%0A%0A%7D

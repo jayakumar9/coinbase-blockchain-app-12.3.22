@@ -2,11 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\components",
+    "\\components\\modal",
+    "\\jayakumarCoinbaseReference",
     "\\lib",
     "\\pages",
-    "\\pages\\api",
-    "\\static"
+    "\\studio",
+    "\\studio\\schemas"
   ],
-  "SelectedNode": "\\components\\Portfolio.js",
+  "SelectedNode": "\\components\\modal\\TransferModal.js",
   "PreviewInSolutionExplorer": false
 }

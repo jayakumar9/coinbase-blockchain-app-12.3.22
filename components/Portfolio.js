@@ -7,11 +7,8 @@ import BalanceChart from './BalanceChart'
 
 
 const Portfolio = ({ thirdWebTokens, sanityTokens, walletAddress }) => {
-  /*  thirdWebTokens[0]
-        .balanceOf(walletAddress)
-        .then(balance => console.log(Number(balance.displayValue)* 3100))
-        */
-    // convert all of my tokens into USD
+    const [walletBalance, setWalletBalance] = useState(0)
+  
     console.log(sanityTokens)
     const tokenToUSD = {}
 
@@ -19,15 +16,23 @@ const Portfolio = ({ thirdWebTokens, sanityTokens, walletAddress }) => {
         tokenToUSD[token.contractAddress] = Number(token.usdPrice)
     }
 
-    console.table(tokenToUSD)
+        
 
-    const calculateTotalBalance = async () => {
-        let total = 0
-        for (const token of thirdWebTokens) {
-            const balance = await token.balanceOf(walletAddress)
-            total += Number(balance.displayValue) * tokenToUSD[token.address]
+    useEffect(() => {
+        const calculateTotalBalance = async () => {
+            const totalBalance = await Promise.all(
+                thirdWebTokens.map(async token => {
+                    const balance = await token.balanceOf(walletAddress)
+                    return Number(balance.displayValue) * tokenToUSD[token.address]
+                })
+            )
+
+            console.log(totalBalance)
+            setWalletBalance(totalBalance.reduce((acc, curr) => acc + curr, 0))
         }
-    }
+
+        return calculateTotalBalance()
+    }, [thirdWebTokens, sanityTokens])
 
     return (
         <Wrapper>
